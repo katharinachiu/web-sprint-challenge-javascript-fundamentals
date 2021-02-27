@@ -32,10 +32,11 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
 function summation(array) {
+  let count = 0;
   for(let i = 0; i <= array.length -1; i++);{
 
   }
-  return i;
+  return count += array[i];
   }
  
 
@@ -61,13 +62,24 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(arrayd){
-    const displayNames = arrayd.forEach(function(){
-      return `name:${zooAnimals.animal_name} scientific: ${zooAnimals.scientific_name}`;
-    })
-    return displayNames;
+  function animalNames(item){
+//  console.log `name:${item.animal_name} scientific: ${item.scientific_name}`;
+
+ const buffalo = item.forEach(function(item){
+   return `name:${item.animal_name} scientific: ${item.scientific_name}`;
+ })
   }
+
   console.log(animalNames(zooAnimals));
+
+  // let displayNames = 
+  // // function animalNames(arrayd){
+  // //   const displayNames = arrayd.forEach(function(){
+  //     return `name:${zooAnimals.animal_name} scientific: ${zooAnimals.scientific_name}`;
+  //   })
+  //   return displayNames;
+  // }
+  // console.log(animalNames(zooAnimals));
 
   // zooAnimals.forEach(function animalNames(displayNames) {
   //   console.log(`name: ${displayNames.animal_name} scientific name: ${displayNames.scientific_name} `)
@@ -97,8 +109,8 @@ console.log(lowerCaseNames(zooAnimals));
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-function lowPopulationAnimals(array){
-  const newArray = array.filter(function(item){
+function lowPopulationAnimals(buffalo){
+  const newBuffalo = buffalo.filter(function(item){
     return item.population < 5;
   })
 }
